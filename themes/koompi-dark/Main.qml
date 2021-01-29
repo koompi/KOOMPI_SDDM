@@ -37,8 +37,8 @@ PlasmaCore.ColorScope {
         id: wallpaper
         height: parent.height
         width: parent.width
-        source: "2794169.jpg"
-        //asynchronous: true
+        source: "./assets/bg.jpg"
+        asynchronous: true
         cache: true
         clip: true
     }
@@ -365,21 +365,10 @@ PlasmaCore.ColorScope {
             y: 0.35 * parent.height
             radius: 7
             color: "#0C090A"
-            opacity: 0.8
+            opacity: 0.9
             z:-1
         }
 
-        // Rectangle {
-        //     id: footerBg
-        //     width: parent.width
-        //     height: footer.height + 10
-        //     anchors.left: parent.left
-        //     anchors.bottom: parent.bottom
-        //     radius: 7
-        //     color: "#2e3440"
-        //     opacity: 0.5
-        //     z:-1
-        // }
         ShaderEffectSource {
             id: blurArea
             sourceItem: wallpaper

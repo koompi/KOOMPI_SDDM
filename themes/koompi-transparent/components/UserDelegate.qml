@@ -58,7 +58,8 @@ Item {
         height: width 
         radius: width / 2
         color: "black"
-        opacity: 0.15
+        opacity: 0.5
+        
     }
 
     Item {

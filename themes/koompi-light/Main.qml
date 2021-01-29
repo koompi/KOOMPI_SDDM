@@ -37,8 +37,8 @@ PlasmaCore.ColorScope {
         id: wallpaper
         height: parent.height
         width: parent.width
-        source: "spaceX.jpg"
-        //asynchronous: true
+        source: "./assets/bg.jpg"
+        asynchronous: true
         cache: true
         clip: true
     }
@@ -365,7 +365,7 @@ PlasmaCore.ColorScope {
             y: 0.35 * parent.height
             radius: 7
             color: "white"
-            opacity: 0.8
+            opacity: 0.9
             z:-1
         }
 

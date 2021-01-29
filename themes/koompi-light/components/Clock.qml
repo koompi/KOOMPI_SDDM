@@ -60,13 +60,8 @@ import org.kde.plasma.core 2.0
 
      
 Column {
-
         id: container
-        anchors {
-                bottom: parent.bottom
-                
-                margins: 800
-            }
+        anchors.horizontalCenter: parent.horizontalCenter
 
         property date dateTime: new Date()
         property color color: "white"
@@ -80,15 +75,15 @@ Column {
         }
         Text {
             id: time
-            anchors.horizontalCenter: parent.right
+            anchors.horizontalCenter: parent.horizontalCenter
             color: "white"//container.color
             text : Qt.formatTime(container.dateTime, "hh:mm")
             font.pointSize: 65
         }
         Text {
             id: date
-            anchors.horizontalCenter: parent.right
-            color: "white"//container.color
+            anchors.horizontalCenter: parent.horizontalCenter
+            color: "white"
             text : Qt.formatDate(container.dateTime, Qt.DefaultLocaleLongDate)
             font.pointSize: 15
         }
