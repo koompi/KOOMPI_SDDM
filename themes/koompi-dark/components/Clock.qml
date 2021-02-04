@@ -62,6 +62,7 @@ import org.kde.plasma.core 2.0
 Column {
 
         id: container
+        y: 100
         anchors.horizontalCenter: parent.horizontalCenter
 
         property date dateTime: new Date()
@@ -76,6 +77,7 @@ Column {
         }
         Text {
             id: time
+            
             anchors.horizontalCenter: parent.horizontalCenter
             color: "#0C090A"//container.color
             text : Qt.formatTime(container.dateTime, "hh:mm")

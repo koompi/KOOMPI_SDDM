@@ -25,6 +25,7 @@ import org.kde.plasma.core 2.0
 Column {
 
         id: container
+        y: 100
         anchors.horizontalCenter: parent.horizontalCenter
         
         property date dateTime: new Date()
